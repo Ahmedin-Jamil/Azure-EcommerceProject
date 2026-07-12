@@ -17,11 +17,11 @@ SELECT
      *
 FROM
     OPENROWSET(
-        BULK 'https://olistdatastorageaccount.dfs.core.windows.net/olistdata/silver/',
+        BULK 'https://olistdatastorageaccountt.dfs.core.windows.net/olistdata/silver/',
         FORMAT = 'PARQUET'
     ) AS result1
 
---- https://olistdatastorageaccount.blob.core.windows.net/olistdata/silver
+--- https://olistdatastorageaccountt.blob.core.windows.net/olistdata/silver
 
 
 
@@ -33,7 +33,7 @@ SELECT
      *
 FROM
     OPENROWSET(
-        BULK 'https://olistdatastorageaccount.dfs.core.windows.net/olistdata/silver/',
+        BULK 'https://olistdatastorageaccountt.dfs.core.windows.net/olistdata/silver/',
         FORMAT = 'PARQUET'
     ) AS result1
 
@@ -48,7 +48,7 @@ https://web.azuresynapse.net/en/authoring/analyze/sqlscripts/view%20final%202?wo
 
 
 
--- CREATE MASTER KEY ENCRYPTION BY PASSWORD = 'd8TySvmWr4rPBUk';
+-- CREATE MASTER KEY ENCRYPTION BY PASSWORD = ' ';
 -- CREATE DATABASE SCOPED CREDENTIAL mayankadmin WITH IDENTITY = 'Managed Identity';
 
 -- select * from sys.database_credentials
@@ -59,7 +59,7 @@ CREATE EXTERNAL FILE FORMAT extfileformat WITH (
 );
 
 CREATE EXTERNAL DATA SOURCE goldlayer WITH (
-    LOCATION = 'https://olistdatastorageaccount.dfs.core.windows.net/olistdata/gold/',
+    LOCATION = 'https://olistdatastorageaccountt.dfs.core.windows.net/olistdata/gold/',
     CREDENTIAL = mayankadmin
 );
 
