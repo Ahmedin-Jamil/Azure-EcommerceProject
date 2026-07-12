@@ -8,6 +8,8 @@ Medallion Architecture (Bronze → Silver → Gold).
 
 ## Architecture Diagram
 
+<img width="2187" height="1091" alt="Architectural Diagram" src="https://github.com/user-attachments/assets/16f4e294-046d-42cc-991b-a9067cc985e7" />
+
 ## Tech Stack
 | Layer | Tool |
 |---|---|
