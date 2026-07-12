@@ -7,7 +7,6 @@ enriched, transformed, and served to analytics tools using the
 Medallion Architecture (Bronze → Silver → Gold).
 
 ## Architecture Diagram
-[paste your architecture diagram image here]
 
 ## Tech Stack
 | Layer | Tool |
